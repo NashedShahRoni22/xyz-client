@@ -4,7 +4,7 @@ import { AppContext } from "../App";
 const HomeBanner = () => {
   const {HomeBanner} = useContext(AppContext);
   return (
-    <section className="md:mx-20 text-white h-[100vh] flex items-center gap-8">
+    <section className="md:mx-20 text-white h-[80vh] flex items-center gap-8">
       <div className="text-center md:text-start md:w-1/2">
         <h2 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-sky-500">
           {HomeBanner?.BannerTitle}

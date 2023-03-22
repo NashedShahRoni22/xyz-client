@@ -10,8 +10,8 @@ const HomeContent = () => {
       </h2>
 
       <div className="py-10 grid place-items-center md:grid-cols-4 gap-4">
-        {HomeContent?.ContentImages.map((ci) => (
-          <div className="relative group">
+        {HomeContent?.ContentImages.map((ci,i) => (
+          <div key={i} className="relative group">
             <img src={ci.ContentImage} alt="" className="rounded" />
             <div className="group-hover:opacity-100 opacity-0 absolute top-0 h-full w-full bg-black/60 flex flex-col justify-center items-center">
               <p className="text-white text-3xl font-bold absolute bottom-5 left-5">
