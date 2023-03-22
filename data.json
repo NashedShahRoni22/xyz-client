@@ -4,5 +4,24 @@
     "BannerDetails": "Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.",
     "BannerImage": "https://i.ibb.co/3hTDPcW/banner-image.png"
   },
-  "HomeDetails": "Home Details"
+  "HomeFocus": {
+    "FocusTitle": "Focus on solving bigger problems"
+  },
+  "HomeAboutUs": {
+    "AboutUsTitle": "Who are we?",
+    "AboutUsImage": "https://i.ibb.co/2My8zWG/banner-img.jpg",
+    "AboutUsDetails": "There’s no shame in admitting how your business strategy — or even your way of thinking — has changed since you began. In fact, these evolutions can improve the story you tell to website visitors.About pages are perfect spaces to talk about where you started, how you’ve grown, and the ideals that have helped your organization mature. Use these moments to show people that you're always ready to change and adapt to the needs of your industry.",
+    "AboutUsTitle2": "Our Mission & Vision",
+    "AboutUsImage2": "https://i.ibb.co/KjhFpdR/mordern-creative.jpg",
+    "AboutUsDetails2": "There’s no shame in admitting how your business strategy — or even your way of thinking — has changed since you began. In fact, these evolutions can improve the story you tell to website visitors.About pages are perfect spaces to talk about where you started, how you’ve grown, and the ideals that have helped your organization mature. Use these moments to show people that you're always ready to change and adapt to the needs of your industry."
+  },
+  "HomeContent": {
+    "ContentTitle": "Checkout our activities",
+    "ContentImages": [
+      { "ContentImage": "https://i.ibb.co/qFxqSWv/Pest-Control-Services.jpg" },
+      { "ContentImage": "https://i.ibb.co/r2SjGq5/Plumbing-Sanitary-Services.jpg"},
+      { "ContentImage": "https://i.ibb.co/MpWtGZB/Gas-Stove-Repair-Services" },
+      { "ContentImage": "https://i.ibb.co/yks0DGG/Home-Cleaning-Services.jpg" }
+    ]
+  }
 }

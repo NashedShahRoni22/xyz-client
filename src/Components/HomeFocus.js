@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import HomeFocusImage from "../imgs/features.svg";
 import { AiOutlineScan, AiFillCodepenCircle, AiOutlineOrderedList } from "react-icons/ai";
+import { AppContext } from "../App";
 const HomeFocus = () => {
+  const {HomeFocus} = useContext(AppContext);
   return (
     <section className="pb-5">
       <h2 className="text-center font-extrabold  text-4xl bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to bg-purple-500">
-        Focus on solving bigger problems
+        {HomeFocus?.FocusTitle}
       </h2>
       <img src={HomeFocusImage} alt="home-focus-img" className="w-full h-[400px]" />
       <div className="mt-5 grid gap-8 md:grid-cols-3">
