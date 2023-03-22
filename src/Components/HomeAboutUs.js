@@ -7,7 +7,7 @@ const HomeAboutUs = () => {
     <div className="md:flex">
       <div className="relative md:w-1/2">
         <img src={Image} alt="" className="" />
-        <div className="absolute top-0 h-full w-full bg-black/90 flex flex-col justify-center p-8">
+        <div className="absolute top-0 h-full w-full bg-black/80 flex flex-col justify-center p-8">
           <h2 className="font-extrabold  text-3xl bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to bg-purple-500">
             Who are we?
           </h2>
@@ -25,7 +25,7 @@ const HomeAboutUs = () => {
       </div>
       <div className="relative md:w-1/2">
         <img src={Image2} alt="" className="" />
-        <div className="absolute top-0 h-full w-full bg-black/90 flex flex-col justify-center p-8">
+        <div className="absolute top-0 h-full w-full bg-black/80 flex flex-col justify-center p-8">
           <h2 className="font-extrabold  text-3xl bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to bg-purple-500">
             Our Mission & Vision
           </h2>

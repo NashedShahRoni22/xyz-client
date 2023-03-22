@@ -1,5 +1,4 @@
 import React from "react";
-import BannerImg from "../imgs/banner-image.png";
 
 const HomeBanner = () => {
   return (
@@ -18,7 +17,7 @@ const HomeBanner = () => {
         </div>
       </div>
       <div className="hidden md:block md:w-1/2">
-        <img src={BannerImg} alt="bannerImg" className="w-[600px]"/>
+        <img src="https://i.ibb.co/3hTDPcW/banner-image.png" alt="bannerImg" className="w-[600px]"/>
       </div>
     </section>
   );
