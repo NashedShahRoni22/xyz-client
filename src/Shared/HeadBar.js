@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HeadBar = () => {
     return (
@@ -8,7 +9,7 @@ const HeadBar = () => {
             </div>
             <div>
                 <button className='px-4 py-2 text-gray-400 font-semibold hover:text-sky-500' >Sign in</button>
-                <button className='px-4 py-2 text-white bg-sky-500 border border-sky-500 hover:bg-transparent rounded font-semibold shadow-lg' >Get Started</button>
+                <Link className='px-4 py-2 text-white bg-sky-500 border border-sky-500 hover:bg-transparent rounded font-semibold shadow-lg' to='/admin' >Admin</Link>
             </div>
         </nav>
     );

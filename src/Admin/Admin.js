@@ -21,7 +21,6 @@ const Admin = () => {
         else{
             toast.error("Not Authorized!")
         }
-        console.log(name, password);
     }
   return (
     <div className="h-[100vh] p-8 flex justify-center items-center">
