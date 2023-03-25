@@ -7,9 +7,9 @@ const HomeAboutUs = () => {
     .then(data => setAboutData(data[0]))
   })
   return (
-    <div className="md:flex py-10">
-      <div className="relative md:w-1/2">
-        <img src={AboutData?.AboutUsImage} alt="" className="" />
+    <div className="md:flex py-10 gap-8">
+      <div className="relative md:w-1/2 hover:border hover:border-sky-500">
+        <img src={AboutData?.AboutUsImage} alt="" className="h-full w-full" />
         <div className="absolute top-0 h-full w-full bg-black/80 flex flex-col justify-center p-8">
           <h2 className="font-extrabold  text-3xl bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to bg-purple-500">
             {AboutData?.AboutUsTitle}
@@ -19,8 +19,8 @@ const HomeAboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="relative md:w-1/2">
-        <img src={AboutData?.AboutUsImage2} alt="" className="" />
+      <div className="relative md:w-1/2 hover:border hover:border-sky-500">
+        <img src={AboutData?.AboutUsImage2} alt="" className="h-full w-full" />
         <div className="absolute top-0 h-full w-full bg-black/80 flex flex-col justify-center p-8">
           <h2 className="font-extrabold  text-3xl bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to bg-purple-500">
             {AboutData?.AboutUsTitle2}

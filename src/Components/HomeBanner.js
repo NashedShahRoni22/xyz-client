@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 
 const HomeBanner = () => {
-  const [data, setData] = useState(""); 
+  const [data, setData] = useState("");
 
-  useEffect(()=>{
+  useEffect(() => {
     fetch("https://react-landing-page-server.vercel.app/data")
-    .then(res => res.json())
-    .then(data => setData(data[0]))
-  })
-  
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data[0]);
+      });
+  });
+
   return (
     <section className="md:mx-20 text-white h-[80vh] flex items-center gap-8">
       <div className="text-center md:text-start md:w-1/2">
@@ -19,12 +21,16 @@ const HomeBanner = () => {
           {data?.BannerDetails}
         </p>
         <div className="mt-8 flex gap-4 justify-center md:justify-start">
-            <button className="px-4 py-2 font-semibold bg-sky-500 border border-sky-500 hover:bg-transparent  rounded shadow-lg" >Learn More</button>
-            <button className="px-4 py-2 font-semibold bg-gray-600 border border-gray-600 hover:bg-transparent rounded shadow-lg" >Get Started</button>
+          <button className="px-4 py-2 font-semibold bg-sky-500 border border-sky-500 hover:bg-transparent  rounded shadow-lg">
+            Learn More
+          </button>
+          <button className="px-4 py-2 font-semibold bg-gray-600 border border-gray-600 hover:bg-transparent rounded shadow-lg">
+            Get Started
+          </button>
         </div>
       </div>
       <div className="hidden md:block md:w-1/2">
-        <img src={data?.BannerImage} alt="" className="w-[600px]"/>
+        <img src={data?.BannerImage} alt="" className="w-[600px]" />
       </div>
     </section>
   );

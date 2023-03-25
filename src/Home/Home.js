@@ -6,6 +6,7 @@ import HomeFocus from "../Components/HomeFocus";
 import HeadBar from "../Shared/HeadBar";
 import BottomBar from "../Shared/BottomBar";
 
+
 const Home = () => {
   return (
     <main className="container mx-auto">
@@ -14,6 +15,7 @@ const Home = () => {
       <HomeFocus />
       <HomeAboutUs/>
       <HomeContent/>
+      
       <BottomBar/>
     </main>
   );
