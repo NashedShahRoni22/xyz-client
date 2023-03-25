@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <main className="container mx-auto">
       <HeadBar />
-      <HomeBanner />
+      <HomeBanner/>
       <HomeFocus />
       <HomeAboutUs/>
       <HomeContent/>

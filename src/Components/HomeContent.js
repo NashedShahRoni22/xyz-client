@@ -1,11 +1,9 @@
-import React, { useContext } from "react";
-import { AppContext } from "../App";
+import React from "react";
 
 const HomeContent = () => {
-  const { HomeContent } = useContext(AppContext);
   return (
     <div className="py-10">
-      <h2 className="text-center font-extrabold  text-4xl bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to bg-purple-500">
+      {/* <h2 className="text-center font-extrabold  text-4xl bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to bg-purple-500">
         {HomeContent?.ContentTitle}
       </h2>
 
@@ -23,7 +21,7 @@ const HomeContent = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

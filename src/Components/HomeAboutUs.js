@@ -1,29 +1,32 @@
-import React, { useContext } from "react";
-import { AppContext } from "../App";
-
+import React, { useEffect, useState } from "react";
 const HomeAboutUs = () => {
-  const { HomeAboutUs } = useContext(AppContext);
+  const [AboutData, setAboutData] = useState("");
+  useEffect(()=>{
+    fetch("https://react-landing-page-server.vercel.app/aboutData")
+    .then(res => res.json())
+    .then(data => setAboutData(data[0]))
+  })
   return (
-    <div className="md:flex">
+    <div className="md:flex py-10">
       <div className="relative md:w-1/2">
-        <img src={HomeAboutUs?.AboutUsImage} alt="" className="" />
+        <img src={AboutData?.AboutUsImage} alt="" className="" />
         <div className="absolute top-0 h-full w-full bg-black/80 flex flex-col justify-center p-8">
           <h2 className="font-extrabold  text-3xl bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to bg-purple-500">
-            {HomeAboutUs?.AboutUsTitle}
+            {AboutData?.AboutUsTitle}
           </h2>
           <p className="text-white mt-3 text-justify">
-            {HomeAboutUs?.AboutUsDetails}
+            {AboutData?.AboutUsDetails}
           </p>
         </div>
       </div>
       <div className="relative md:w-1/2">
-        <img src={HomeAboutUs?.AboutUsImage2} alt="" className="" />
+        <img src={AboutData?.AboutUsImage2} alt="" className="" />
         <div className="absolute top-0 h-full w-full bg-black/80 flex flex-col justify-center p-8">
           <h2 className="font-extrabold  text-3xl bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to bg-purple-500">
-            {HomeAboutUs?.AboutUsTitle2}
+            {AboutData?.AboutUsTitle2}
           </h2>
           <p className="text-white mt-3 text-justify">
-            {HomeAboutUs?.AboutUsDetails2}
+            {AboutData?.AboutUsDetails2}
           </p>
         </div>
       </div>
